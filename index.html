@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+    	<head>
+        	<title>Electronegativity Calculator</title>
+            <meta charset="UTF-8">
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		    <script src="app.js"></script>
+        </head>
+        <body>
+        	<h2>Electronegativity Calculator</h2>
+            <p>In formulae, separate different elements with dashes (-)</p>
+            <p>Example: "Mg-Cl"</p>
+            <p>Response format: "&lt;electronegativity difference&gt;, &lt;intramolecular forces&gt;, &lt;intermolecular forces&gt;"</p>
+            <div class="textBoxContainer">
+            	<div class="swt">Input formula: </div>
+                <label for="formula">Formula</label>
+                <input type="text" class="input" placeholder="Enter formula here" id="formula" autocomplete="on" name="formula" autofocus>
+                <button class="enter" onclick="submitFormula()">Enter!</button>
+            </div>
+            <br/>
+            <div class="pcontainer" id="pcontainer"></div>
+        </body>
+    </html>
