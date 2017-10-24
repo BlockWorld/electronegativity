@@ -46,6 +46,11 @@ function evaluate(str) {
 			// xd
 		}
 		hasHydrogen = false;
+		for (i = 0; i < elements.length; i++) {
+			if (electronegativity[elements[i]] == 0) {
+				returnStr = elements[i].toString() + " does not have an electronegativity value.";
+			}
+		}
 		return returnStr;
 	} else {
 		return "sorry HONC 1234 is too hard lol";
